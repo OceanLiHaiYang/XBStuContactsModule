@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XBFlutterModule_Example' do
+  pod 'XBFlutterModule', :path => '../'
+
+  target 'XBFlutterModule_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
