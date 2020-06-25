@@ -5,7 +5,9 @@ target 'XBFlutterModule_Example' do
 
   target 'XBFlutterModule_Tests' do
     inherit! :search_paths
-
-    
   end
 end
+
+#添加如下两行代码，路径修改为我们的fluter module的路径
+flutter_application_path = '../XBFlutterModule/flutter_module'
+  eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)

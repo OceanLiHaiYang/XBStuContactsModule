@@ -1,0 +1,16 @@
+PODS:
+  - XBFlutterModule (0.1.0)
+
+DEPENDENCIES:
+  - XBFlutterModule (from `../`)
+
+EXTERNAL SOURCES:
+  XBFlutterModule:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XBFlutterModule: 918612d7508f6ce913f73a875bd0557d29e5d681
+
+PODFILE CHECKSUM: edf6233e2211cf5d6c7aff0665ea4562306eaa50
+
+COCOAPODS: 1.9.1

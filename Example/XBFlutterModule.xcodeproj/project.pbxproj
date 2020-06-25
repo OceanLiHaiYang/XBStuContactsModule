@@ -29,10 +29,10 @@
 
 /* Begin PBXFileReference section */
 		2021030E8E58B510580E092A /* Pods-XBFlutterModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBFlutterModule_Example.release.xcconfig"; path = "Target Support Files/Pods-XBFlutterModule_Example/Pods-XBFlutterModule_Example.release.xcconfig"; sourceTree = "<group>"; };
-		281ECB0861A1AB2AC2EAAAC1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		281ECB0861A1AB2AC2EAAAC1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3920008B24FD91D6BD7BB6FB /* Pods_XBFlutterModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBFlutterModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F0C3727E194499C8B5E8BD1 /* Pods-XBFlutterModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBFlutterModule_Example.debug.xcconfig"; path = "Target Support Files/Pods-XBFlutterModule_Example/Pods-XBFlutterModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		501A659B5FD35688D0A64A62 /* XBFlutterModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XBFlutterModule.podspec; path = ../XBFlutterModule.podspec; sourceTree = "<group>"; };
+		501A659B5FD35688D0A64A62 /* XBFlutterModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XBFlutterModule.podspec; path = ../XBFlutterModule.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* XBFlutterModule_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBFlutterModule_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8B88B026608E57E9090022D0 /* Pods-XBFlutterModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBFlutterModule_Tests.release.xcconfig"; path = "Target Support Files/Pods-XBFlutterModule_Tests/Pods-XBFlutterModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B8937032877CDB3D17693292 /* Pods_XBFlutterModule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBFlutterModule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C17438B361CE4038FA9FDC5D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C17438B361CE4038FA9FDC5D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D6D9E52DEE8BE9FECFE32EB1 /* Pods-XBFlutterModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBFlutterModule_Tests.debug.xcconfig"; path = "Target Support Files/Pods-XBFlutterModule_Tests/Pods-XBFlutterModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +147,6 @@
 				D6D9E52DEE8BE9FECFE32EB1 /* Pods-XBFlutterModule_Tests.debug.xcconfig */,
 				8B88B026608E57E9090022D0 /* Pods-XBFlutterModule_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -172,6 +171,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				704551FCEBB6CA2327E980F6 /* [CP] Embed Pods Frameworks */,
+				C3CA4309249F265600C1E907 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -227,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -301,6 +302,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C3CA4309249F265600C1E907 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed\n";
 		};
 		DEAF21508789440E5D9EFC98 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -478,6 +496,7 @@
 			baseConfigurationReference = 4F0C3727E194499C8B5E8BD1 /* Pods-XBFlutterModule_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = XBFlutterModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +512,7 @@
 			baseConfigurationReference = 2021030E8E58B510580E092A /* Pods-XBFlutterModule_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = XBFlutterModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
