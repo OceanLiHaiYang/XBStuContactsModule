@@ -1,5 +1,5 @@
 import XCTest
-import XBFlutterModule
+//import XBFlutterModule
 
 class Tests: XCTestCase {
     

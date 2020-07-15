@@ -1,0 +1,22 @@
+{
+  "name": "XBFlutterModule",
+  "version": "0.1.0",
+  "summary": "A short description of XBFlutterModule.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/henrylee_2020/XBFlutterModule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "henrylee_2020": "776549142@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/henrylee_2020/XBFlutterModule.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XBFlutterModule/Classes/**/*"
+}

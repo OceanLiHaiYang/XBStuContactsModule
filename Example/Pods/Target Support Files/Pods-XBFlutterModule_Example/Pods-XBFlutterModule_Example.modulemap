@@ -1,0 +1,6 @@
+framework module Pods_XBFlutterModule_Example {
+  umbrella header "Pods-XBFlutterModule_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
